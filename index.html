@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller DOM avanzado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Taller DOM avanzado</h1>
+  <p>Lenguajes de Programación · Henry Rodríguez Quintero</p>
+</header>
+
+<main>
+
+  <!-- 1. Cambiar un título con un botón -->
+  <section>
+    <h2>1. Cambiar un título con un botón</h2>
+    <h3 id="titulo">Título original</h3>
+    <button id="btnCambiarTitulo">Cambiar título</button>
+  </section>
+
+  <!-- 2. Cambiar el color de un texto -->
+  <section>
+    <h2>2. Cambiar el color de un texto</h2>
+    <p id="textoColor">Este texto va a cambiar de color.</p>
+    <button id="btnColor">Cambiar color</button>
+  </section>
+
+  <!-- 3. Mostrar / ocultar un elemento -->
+  <section>
+    <h2>3. Mostrar / ocultar un elemento</h2>
+    <button id="btnToggle">Ocultar</button>
+    <div id="cajaToggle" class="caja">Soy un elemento que se puede mostrar u ocultar.</div>
+  </section>
+
+  <!-- 4 y 5. Crear y eliminar elementos -->
+  <section>
+    <h2>4. Crear elementos dinámicamente</h2>
+    <input type="text" id="inputElemento" placeholder="Texto del elemento">
+    <button id="btnCrear">Crear elemento</button>
+    <div id="contenedorElementos" class="contenedor-items"></div>
+  </section>
+
+  <section>
+    <h2>5. Eliminar elementos</h2>
+    <p>Cada elemento creado en el punto 4 tiene su botón para eliminarlo. También puedes eliminar el último o todos:</p>
+    <button id="btnEliminarUltimo" class="secundario">Eliminar último</button>
+    <button id="btnEliminarTodos" class="secundario">Eliminar todos</button>
+  </section>
+
+  <!-- 6. Lista a partir de un array -->
+  <section>
+    <h2>6. Crear una lista a partir de un array</h2>
+    <button id="btnLista">Generar lista</button>
+    <ul id="listaLenguajes"></ul>
+  </section>
+
+  <!-- 7. Tarjetas a partir de objetos -->
+  <section>
+    <h2>7. Crear tarjetas a partir de objetos</h2>
+    <button id="btnTarjetas">Generar tarjetas</button>
+    <div id="contenedorTarjetas" class="tarjetas"></div>
+  </section>
+
+  <!-- 8. Formulario y mostrar sus datos -->
+  <section>
+    <h2>8. Crear un formulario y mostrar sus datos</h2>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="email" id="correo" placeholder="Correo" required>
+      <input type="number" id="edad" placeholder="Edad" min="1" required>
+      <select id="carrera">
+        <option value="Ingeniería de Software">Ingeniería de Software</option>
+        <option value="Ingeniería de Sistemas">Ingeniería de Sistemas</option>
+        <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="resultadoFormulario"></div>
+  </section>
+
+  <!-- 9. Lista de tareas -->
+  <section>
+    <h2>9. Crear una lista de tareas</h2>
+    <input type="text" id="inputTarea" placeholder="Nueva tarea">
+    <button id="btnAgregarTarea">Agregar tarea</button>
+    <p id="contadorTareas">Tareas pendientes: 0</p>
+    <ul id="listaTareas" class="tareas"></ul>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
